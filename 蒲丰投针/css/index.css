@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+body {
+    background-color: #000;
+}
+
+#content {
+    width: 500px;
+    height: 580px;
+    margin: 30px auto;
+    background-color: #ccc;
+    padding: 40px;
+    box-shadow: 0 0 10px #fff;
+}
+
+#box {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px dashed #000;
+    position: relative;
+
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+}
+
+
+.line:nth-child(1) {
+    top: 125px;
+}
+
+.line:nth-child(2) {
+    top: 200px;
+}
+
+.line:nth-child(3) {
+    top: 275px;
+}
+
+.needle {
+    width: 1px;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#test {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#inp_num, .inp {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    padding-left: 10px;
+}
+.inp::placeholder{
+    color: rgba(255,0,0,.7);
+}
+#rate {
+    float: right;
+    margin-top: -20px;
+    position: relative;
+}
+
+#begin, #clear {
+    width: 80px;
+    height: 30px;
+    float: right;
+    border-radius: 5px;
+    color: #ff6700;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    transition: .5s;
+    text-decoration: none;
+}
+#begin:hover, #clear:hover{
+    color: #fff;
+    background-color: #ff6700;
+}
+#result {
+    margin-top: 20px;
+}
+
+#result .value {
+    margin-bottom: 20px;
+}
+.prompt{
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+}
